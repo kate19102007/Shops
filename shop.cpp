@@ -1,6 +1,7 @@
 #include"Baseshop.h"
 #include"Shopkate.h"
 #include"ShopVika.h"
+#include"Shopdana.h"
 
 
 int main() {
@@ -34,4 +35,5 @@ int main() {
     return 0;
 
 }
+
 
