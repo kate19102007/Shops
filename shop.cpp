@@ -16,8 +16,10 @@ int main() {
     file << "========== ЧЕК ==========" << endl << endl;
 
     shop_kate.saveReceipt(file);
+	shop_vika.saveReceipt(file);    
 
-	double total = shop_kate.calculateTotal();
+	double total = shop_kate.calculateTotal() + shop_vika.calculateTotal();
+   
 
 
     file << "==========================" << endl;
