@@ -52,6 +52,13 @@ void Market::saveReceipt(ofstream& file) {
     file << "Разом: " << total << endl;
     file << endl;
 }
+doubl Market::calculateTotal() {
+    double total = 0;
+    for (int i = 0; i < indx; i++) {
+        total += products[i].price * products[i].count;
+    }
+    return total;
+}
 
 string Market::getName() { 
     return name; 

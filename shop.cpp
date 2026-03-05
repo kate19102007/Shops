@@ -15,7 +15,11 @@ int main() {
 
     shop_kate.saveReceipt(file);
 
+	double total = shop_kate.calculateTotal();
 
+
+    file << "==========================" << endl;
+    file << "    ЗАГАЛЬНА СУММА: " << total << endl;
     file << "==========================" << endl;
     file.close();
 

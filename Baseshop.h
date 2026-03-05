@@ -26,6 +26,7 @@ protected:
     Market(string name, int discount, string promo_code, int promo_value);
 
 public:
+	double calculateTotal();
     void addProduct(string productName, int count, double price);
 
     void usePromo(string promoCode);
