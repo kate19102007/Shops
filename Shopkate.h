@@ -8,9 +8,9 @@ class ShopKate : public Market {
 
 
 		// Додавання товарів назва кількість ціна
-		addProduct("Ноутбук", 1, 1000.0);
-		addProduct("Мишка", 2, 50.0);
-		addProduct("Клавіатура", 1, 80.0);
+		addProduct("laptop", 1, 1000.0);
+		addProduct("Mouse", 2, 50.0);
+		addProduct("Keyboard", 1, 80.0);
 		usePromo("SUPER20");
 	}
 };
