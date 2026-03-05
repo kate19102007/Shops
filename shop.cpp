@@ -1,9 +1,11 @@
 #include"Baseshop.h"
 #include"Shopkate.h"
+#include"ShopVika.h"
 
 
 int main() {
     ShopKate shop_kate;
+    ShopVika shop_vika;
 
     ofstream file("receipt.txt");
     if (!file.is_open()) {
@@ -26,4 +28,5 @@ int main() {
     cout << "Saved to receipt.txt" << endl;
 
     return 0;
+
 }
