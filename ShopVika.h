@@ -9,7 +9,7 @@ class ShopVika : public Market {
 			// Додавання товарів назва кількість ціна
 			addProduct("Phone", 1, 1500.0);
 			addProduct("Headphones", 2, 700.0);
-			addProduct("Charger", 1, 0.0);
+			addProduct("Charger", 1, 75.0);
 			usePromo("DISCOUNTVIKA15");
 		}
 };

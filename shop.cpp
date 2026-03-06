@@ -2,12 +2,14 @@
 #include"Shopkate.h"
 #include"ShopVika.h"
 #include"Shopdana.h"
+#include"ShopOlya.h"
 
 
 int main() {
     ShopKate shop_kate;
     ShopVika shop_vika;
 	ShopDana shop_dana;
+	ShopOlya shop_olya;
 
     ofstream file("receipt.txt");
     if (!file.is_open()) {
@@ -20,8 +22,9 @@ int main() {
     shop_kate.saveReceipt(file);
 	shop_vika.saveReceipt(file);
 	shop_dana.saveReceipt(file);
+	shop_olya.saveReceipt(file);
 
-	double total = shop_kate.calculateTotal() + shop_vika.calculateTotal()+shop_dana.calculateTotal();
+	double total = shop_kate.calculateTotal() + shop_vika.calculateTotal() + shop_dana.calculateTotal() + shop_olya.calculateTotal();
    
 
 
